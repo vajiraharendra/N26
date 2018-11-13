@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="14" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3648" started-at="2018-11-13T18:57:47Z" finished-at="2018-11-13T18:57:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3648" started-at="2018-11-13T18:57:47Z" finished-at="2018-11-13T18:57:51Z">
+      <class name="com.N26.BestBuy.Products.Products">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="372" started-at="2018-11-14T00:27:47Z" finished-at="2018-11-14T00:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkValidationForInvalidProductIDWhenEdit()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="checkValidationForInvalidProductIDWhenEdit" duration-ms="1469" started-at="2018-11-14T00:27:47Z" finished-at="2018-11-14T00:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationForInvalidProductIDWhenEdit -->
+        <test-method status="PASS" signature="verifyProductCannotCreateWithNameAsnull()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyProductCannotCreateWithNameAsnull" duration-ms="457" started-at="2018-11-14T00:27:49Z" finished-at="2018-11-14T00:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductCannotCreateWithNameAsnull -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:49Z" finished-at="2018-11-14T00:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="1" started-at="2018-11-14T00:27:49Z" finished-at="2018-11-14T00:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyProductDetailsAfterEdit()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyProductDetailsAfterEdit" duration-ms="164" started-at="2018-11-14T00:27:49Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailsAfterEdit -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyProductDetailsDisplayCorrectly()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyProductDetailsDisplayCorrectly" duration-ms="168" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetailsDisplayCorrectly -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="4" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyServiceAllowsToCreateProductWithSameDataSet()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyServiceAllowsToCreateProductWithSameDataSet" duration-ms="106" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceAllowsToCreateProductWithSameDataSet -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyServiceAllowsToGetProducts()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyServiceAllowsToGetProducts" duration-ms="383" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceAllowsToGetProducts -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyServiceNotAllowsToCreateProductWithoutValues()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyServiceNotAllowsToCreateProductWithoutValues" duration-ms="37" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceNotAllowsToCreateProductWithoutValues -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyServiceNotAllowsToCreateWithoutName()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyServiceNotAllowsToCreateWithoutName" duration-ms="35" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceNotAllowsToCreateWithoutName -->
+        <test-method status="PASS" signature="verifyServiceNotAllowsToCreateWithoutType()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyServiceNotAllowsToCreateWithoutType" duration-ms="45" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceNotAllowsToCreateWithoutType -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyStatusCodeAfterCreateProduct()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyStatusCodeAfterCreateProduct" duration-ms="34" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCodeAfterCreateProduct -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyThatServiceAllowsToDeleteAProduct()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyThatServiceAllowsToDeleteAProduct" duration-ms="107" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatServiceAllowsToDeleteAProduct -->
+        <test-method status="PASS" signature="verifyThatServiceValidateTheWrongProductID()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyThatServiceValidateTheWrongProductID" duration-ms="32" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatServiceValidateTheWrongProductID -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:50Z" finished-at="2018-11-14T00:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTheValidationWhenDeleteAlreadyDeletedproduct()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyTheValidationWhenDeleteAlreadyDeletedproduct" duration-ms="112" started-at="2018-11-14T00:27:51Z" finished-at="2018-11-14T00:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheValidationWhenDeleteAlreadyDeletedproduct -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:51Z" finished-at="2018-11-14T00:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyValidationWhenTryToDeleteNotExistingProductId()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="verifyValidationWhenTryToDeleteNotExistingProductId" duration-ms="47" started-at="2018-11-14T00:27:51Z" finished-at="2018-11-14T00:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidationWhenTryToDeleteNotExistingProductId -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.N26.BestBuy.Products.Products@4678c730]" name="setup" is-config="true" duration-ms="0" started-at="2018-11-14T00:27:51Z" finished-at="2018-11-14T00:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.N26.BestBuy.Products.Products -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
