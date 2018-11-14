@@ -44,6 +44,20 @@ public class Products
 		 Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_BAD_REQUEST); // Assert the status code
 	}
 	
+	@Test	// Verify the created product details
+	public void verifyCreatedProductDetails ()
+	{
+		Response response = given().contentType("application/json").accept(ContentType.JSON)
+		 		.body(product1())
+		 		.when().post("/products"); 
+		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_CREATED); // Assert the status code
+		Assert.assertEquals(response.jsonPath().getString("name"), "Toyota Vios");
+		Assert.assertEquals(response.jsonPath().getString("type"), "saloon");
+		Assert.assertEquals(response.jsonPath().getDouble("price"), 30.0);
+		Assert.assertEquals(response.jsonPath().getString("description"), "Car");
+		Assert.assertEquals(response.jsonPath().getString("model"), "vios");
+	}
+	
 	@Test	// Verify that service allows to create product with same set of data
 	public void verifyServiceAllowsToCreateProductWithSameDataSet()
 	{
@@ -52,7 +66,7 @@ public class Products
 						 		.when().post("/products"); 
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_CREATED); // Assert the status code
 		int product1 = response.jsonPath().getInt("id");	// Get the product ID
-		System.out.println(product1);
+		
 		// Create a product using same Product Object
 		Response response2 = given().contentType("application/json").accept(ContentType.JSON)
 		 		.body(product1())
@@ -234,7 +248,6 @@ public class Products
 	public void verifyServiceAllowsToGetProducts ()
 	{
 		Response response = given().contentType("application/json").accept(ContentType.JSON)
-							 		.body("")
 							 		.when().get("/products"); 
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK); // Assert the status code
 		Assert.assertNotNull(response.jsonPath().getInt("total"));	// Assert that total has values
@@ -247,8 +260,7 @@ public class Products
 	public void verifyProoductsLoadAccordingToLimit ()
 	{
 		Response response = given().contentType("application/json").accept(ContentType.JSON)
-		 		
-		 		.when().get("/products"+"?$limit=5&$skip=2"); 
+		 				 		.when().get("/products"+"?$limit=5&$skip=2"); 
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK); // Assert the status code
 		Assert.assertNotNull(response.jsonPath().getInt("total"));	// Assert that total has values
 		Assert.assertEquals(response.jsonPath().getInt("limit"), 5);	// Assert the default limit value is 5
@@ -257,12 +269,11 @@ public class Products
 		
 	}
 	
-	@Test	// Verify that Products skip loafing according to given number
+	@Test	// Verify that Products skip loading according to given number
 	public void verifyProductLoadingSkippingAccordingToGivenNumber ()
 	{
-Response response = given().contentType("application/json").accept(ContentType.JSON)
-		 		
-		 		.when().get("/products"+"?$limit=5&$skip=100000000"); 
+		Response response = given().contentType("application/json").accept(ContentType.JSON)
+		 				.when().get("/products"+"?$limit=5&$skip=100000000"); 
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK); // Assert the status code
 		Assert.assertNotNull(response.jsonPath().getInt("total"));	// Assert that total has values
 		Assert.assertEquals(response.jsonPath().getInt("limit"), 5);	// Assert the default limit value is 5
