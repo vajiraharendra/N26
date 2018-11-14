@@ -3,7 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.N26.BestBuy.Products.Products"/>
+      <class name="com.N26.BestBuy.Products.Products">
+        <methods>
+          <include name="verifyProoductsLoadAccordingToLimit"/>
+        </methods>
+      </class> <!-- com.N26.BestBuy.Products.Products -->
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.N26.BestBuy.Products.Products">
+        <methods>
+          <include name="verifyProoductsLoadAccordingToLimit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.N26.BestBuy.Products.Products -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
