@@ -247,19 +247,26 @@ public class Products
 	public void verifyProoductsLoadAccordingToLimit ()
 	{
 		Response response = given().contentType("application/json").accept(ContentType.JSON)
-		 		.body("{\"limit\": \"5\"}")
-		 		.when().get("/products"+"?limit=5"); 
+		 		
+		 		.when().get("/products"+"?$limit=5&$skip=2"); 
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK); // Assert the status code
 		Assert.assertNotNull(response.jsonPath().getInt("total"));	// Assert that total has values
 		Assert.assertEquals(response.jsonPath().getInt("limit"), 5);	// Assert the default limit value is 5
-		Assert.assertEquals(response.jsonPath().getInt("skip"), 0);	// Assert the default skip value
+		Assert.assertEquals(response.jsonPath().getInt("skip"), 2);	// Assert the default skip value
 		Assert.assertNotNull(response.jsonPath().getInt("data[4].id"));	// Assert that the Product Id has a value 
+		
 	}
 	
 	@Test	// Verify that Products skip loafing according to given number
 	public void verifyProductLoadingSkippingAccordingToGivenNumber ()
 	{
-		
+Response response = given().contentType("application/json").accept(ContentType.JSON)
+		 		
+		 		.when().get("/products"+"?$limit=5&$skip=100000000"); 
+		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK); // Assert the status code
+		Assert.assertNotNull(response.jsonPath().getInt("total"));	// Assert that total has values
+		Assert.assertEquals(response.jsonPath().getInt("limit"), 5);	// Assert the default limit value is 5
+		Assert.assertEquals(response.jsonPath().getInt("skip"), 100000000);	// Assert the default skip value
 	}
 	
 	

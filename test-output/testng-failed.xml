@@ -5,19 +5,9 @@
     <classes>
       <class name="com.N26.BestBuy.Products.Products">
         <methods>
-          <include name="verifyProoductsLoadAccordingToLimit"/>
+          <include name="verifyProductLoadingSkippingAccordingToGivenNumber"/>
         </methods>
       </class> <!-- com.N26.BestBuy.Products.Products -->
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.N26.BestBuy.Products.Products">
-        <methods>
-          <include name="verifyProoductsLoadAccordingToLimit"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.N26.BestBuy.Products.Products -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
