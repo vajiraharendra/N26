@@ -17,6 +17,9 @@ Added all the dependencies to the POM file
 
 ### How to run the project?
 Clone the project and take it to local folder
+
 Import the project to Eclipse as existing maven project
+
 Run the test cases
+
 (make sure to run "api-playground" in http://localhost:3030
